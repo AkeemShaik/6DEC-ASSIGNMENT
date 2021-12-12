@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <title>PRACTICE SESSION</title>
+</head>
+<body>
+    
+    <h2>ADMISSION FORM FOR GEEKSTER</h2>
+
+    <div  class="form-container">
+        <form>
+
+            <h3>PERSONAL INFO</h3>
+
+            <input class="inline" type="text" name="f_name" placeholder="FIRST NAME" required/>
+            <input class="inline" type="text" name="l_name" placeholder="LAST NAME" required/>
+            <br>
+            <input class="inline" type="email" name="mail" placeholder="EMAIL ID" required/>
+            <input class="inline" type="tel" name="phone" placeholder="PHONE NUMBER" required pattern="[0-9]{2}-[0-9]{3}" title="Please enter in the format 111-1111-1111"/>
+
+            <select name="gender">
+                <option selected disabled>GENDER</option>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>OTHER</option>
+            </select>
+            
+            <input  type="date" name="date_of_birth" />
+            <textarea name="address" placeholder="ADDRESS"></textarea>
+
+            <h3>EDUCATIONAL DETAILS</h3>
+
+            
+            <select name="Degree">
+                <option selected disabled>SELECT DEGREE</option>
+                <optgroup label="Bachelors">
+                    <option>B.Tech</option>
+                    <option>B.C.A</option>
+                    <option>B.E.</option>
+                    <option>B.Sc</option>
+                </optgroup>
+
+                <optgroup label="Masters">
+                    <option>M.Tech</option>
+                    <option>M.C.A</option>
+                    <option>M.E.</option>
+                    <option>M.Sc</option>
+                </optgroup>
+            </select>
+
+            <input type="text" name="college" placeholder="COLLEGE NAME"/>
+            <input type="number" name="graduation" placeholder="GRADUATED YEAR" min="2010" max="2022"/>
+            <input type="number" name="percentage" placeholder="PERCENTAGE" min="0" max="100" step="5"/>
+
+            <h5 class="inline">UPLOAD RESUME: </h5>
+
+            <input class="inline" type="file"/>
+
+        
+            <h3>COURSE DETAILS</h3>
+
+
+            <input class="inline" type="radio" name="course_type" />Fundamentals
+            <input class="inline" type="radio" name="course_type" />Advanced
+
+            <br>
+            <input class="inline" type="checkbox" name="course_name"/> Web 
+            <input class="inline" type="checkbox" name="course_name"/> Data Structures & Algorithm
+
+            <br><br>
+
+            <input class="inline" type="submit" value="APPLY FOR ADMISSION"/>
+            <input class="inline" type="reset"/>
+
+        </form>
+    </div>
+</body>
+</html>
